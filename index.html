@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC India - Certificate Verification</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">CSC India</div>
+    <div class="menu-icon">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Organization Header Section -->
+    <section class="org-header">
+      <div class="grid-logo">
+        <span class="square red"></span>
+        <span class="square green"></span>
+        <span class="square yellow"></span>
+        <span class="square blue"></span>
+      </div>
+      <h2>COUNCIL FOR SKILLS AND COMPETENCIES (CSC INDIA)</h2>
+      <p>UNDER ANDHRA PRADESH STATE COUNCIL OF HIGHER EDUCATION (APSCHE)</p>
+      <p class="sub-org">A Statutory Body of the Government of A.P</p>
+    </section>
+
+    <!-- Verification Banner -->
+    <section class="verification-status">
+      <h1>Certificate Verified <i class="fa-solid fa-circle-check"></i></h1>
+      <p>This certificate is authentic and has been verified by our system.</p>
+    </section>
+
+    <!-- Certificate Details Section -->
+    <section class="card">
+      <div class="card-header orange">
+        <i class="fa-solid fa-circle"></i>
+        <span>Certificate Details</span>
+      </div>
+
+      <div class="card-body">
+
+        <!-- Student Information -->
+        <div class="section-title">
+          <i class="fa-solid fa-user"></i>
+          <h3>Student Information</h3>
+        </div>
+
+        <div class="info-group">
+          <label>Full Name</label>
+          <p class="bold">Brunda Geethika Peddiboyina</p>
+        </div>
+
+        <div class="info-group">
+          <label>Roll Number</label>
+          <p class="bold">23501A0520</p>
+        </div>
+
+        <div class="info-group">
+          <label>Email Address</label>
+          <p class="bold">6brunda@gmail.com</p>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Internship Information -->
+        <div class="section-title">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>Internship Information</h3>
+        </div>
+
+        <div class="info-group">
+          <label>Internship Name</label>
+          <p class="bold title-text">Data Science using Python</p>
+        </div>
+
+        <div class="info-group">
+          <label>Institution</label>
+          <p class="bold">Prasad V. Potluri Siddhartha Institute of Technology</p>
+          <p class="sub-text">Affiliated with JNTU Kakinada</p>
+        </div>
+
+        <div class="info-group">
+          <label>Offered By</label>
+          <p class="bold">Council for Skills and Competencies (CSC India)</p>
+          <p class="sub-text">Under APSCHE - Student Internship Initiative</p>
+        </div>
+
+        <div class="info-group">
+          <label>Internship Period</label>
+          <p class="bold">04-05-2026 to 27-06-2026</p>
+        </div>
+
+        <div class="info-group">
+          <label>Issue Date</label>
+          <p class="bold">01-07-2026</p>
+        </div>
+
+        <div class="info-group">
+          <label>Authorized By</label>
+          <p class="bold">Shri. Y Sandesh</p>
+          <p class="sub-text">Associate Director, CSC India</p>
+        </div>
+
+        <!-- Certificate ID Box -->
+        <div class="cert-id-box">
+          <label>Certificate ID</label>
+          <p class="cert-id" id="certId">CSCIndia-T4J8R7Q3</p>
+          <button class="copy-btn" onclick="copyCertId()">
+            <i class="fa-regular fa-copy"></i> Copy ID
+          </button>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="qr-section">
+          <p class="qr-label"><i class="fa-solid fa-qrcode"></i> Scan to Verify Online</p>
+          <div class="qr-wrapper">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://verify.cscindia.org.in/&color=000000&bgcolor=ffffff&margin=6"
+              alt="QR Code - Verify Certificate"
+              class="qr-code-img"
+            >
+          </div>
+          <a href="https://verify.cscindia.org.in/" target="_blank" rel="noopener noreferrer" class="verify-link">
+            verify.cscindia.org.in
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certificate Preview Section -->
+    <section class="card">
+      <div class="card-header orange">
+        <i class="fa-regular fa-image"></i>
+        <span>Certificate Preview</span>
+      </div>
+
+      <div class="card-body center-align">
+        <div class="image-wrapper">
+          <img
+            src="assets/certificate.jpeg"
+            alt="Certificate of Completion - Brunda Geethika Peddiboyina"
+            onerror="this.style.display='none'; document.getElementById('img-placeholder').style.display='flex';"
+          >
+          <div id="img-placeholder" class="img-placeholder" style="display:none;">
+            <i class="fa-regular fa-image"></i>
+            <p>Certificate image not available</p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button class="btn btn-warning" onclick="downloadCertificate()">
+            <i class="fa-solid fa-download"></i> Download
+          </button>
+          <button class="btn btn-outline" onclick="shareCertificate()">
+            <i class="fa-solid fa-share-nodes"></i> Share
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer note -->
+    <p class="footer-note">
+      <i class="fa-solid fa-shield-halved"></i>
+      Verify this certificate at
+      <a href="https://verify.cscindia.org.in/" target="_blank" rel="noopener noreferrer">verify.cscindia.org.in</a>
+    </p>
+
+  </main>
+
+  <script>
+    function copyCertId() {
+      const certId = document.getElementById('certId').textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(certId).then(function () {
+          showToast('Certificate ID copied!');
+        }).catch(function () {
+          fallbackCopy(certId);
+        });
+      } else {
+        fallbackCopy(certId);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const el = document.createElement('textarea');
+      el.value = text;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+      showToast('Certificate ID copied!');
+    }
+
+    function downloadCertificate() {
+      const img = document.querySelector('.image-wrapper img');
+      if (img && img.complete && img.naturalHeight !== 0) {
+        const link = document.createElement('a');
+        link.href = img.src;
+        link.download = 'CSCIndia-T4J8R7Q3-Certificate.jpeg';
+        link.click();
+      } else {
+        showToast('Certificate image not available for download.');
+      }
+    }
+
+    function shareCertificate() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'CSC India Certificate - Brunda Geethika Peddiboyina',
+          text: 'Certificate of Completion - Data Science using Python | ID: CSCIndia-T4J8R7Q3',
+          url: window.location.href
+        }).catch(function (err) {
+          console.log('Share cancelled:', err);
+        });
+      } else {
+        const url = window.location.href;
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(url).then(function () {
+            showToast('Link copied for sharing!');
+          });
+        } else {
+          showToast('Share this URL: ' + url);
+        }
+      }
+    }
+
+    function showToast(message) {
+      let toast = document.getElementById('toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'toast';
+        toast.className = 'toast';
+        document.body.appendChild(toast);
+      }
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(function () {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+  </script>
+
+</body>
+</html>
